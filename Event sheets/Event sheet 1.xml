@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="822545069538979">
+            <conditions>
+                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="878936737475940" type="Knight">
+                    <param id="0" name="Instance variable">is_attack</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-group description="" sid="479800006827436" title="Animation">
+                    <sub-events>
+                        <event-block sid="228110956286458">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="359497803626760" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="124170455605875" type="Dir">
+                                    <param id="0" name="Object">Knight</param>
+                                    <param id="1" name="Image point (optional)">0</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="858548490521853" type="Dir">
+                                    <param id="0" name="Pin to">Knight</param>
+                                    <param id="1" name="Mode">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="922177862526741">
+                            <conditions>
+                                <condition id="-11" name="Is within angle" sid="433694248154649" type="Dir">
+                                    <param id="0" name="Within">10</param>
+                                    <param id="1" name="Angle">315</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="748606325460808">
+                                    <conditions>
+                                        <condition behavior="8Direction" id="0" name="Is moving" sid="335399648326399" type="Dir" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="604207522188595" type="Knight">
+                                            <param id="0" name="Animation">&quot;Run_U&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="526328172720759">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="508056102262113" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="702514627926650" type="Knight">
+                                            <param id="0" name="Animation">&quot;Idle_U&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="272140757352695">
+                            <conditions>
+                                <condition id="-11" name="Is within angle" sid="951378991124847" type="Dir">
+                                    <param id="0" name="Within">10</param>
+                                    <param id="1" name="Angle">270</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="308912970587812">
+                                    <conditions>
+                                        <condition behavior="8Direction" id="0" name="Is moving" sid="637930745680768" type="Dir" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="855719813991788" type="Knight">
+                                            <param id="0" name="Animation">&quot;Run_U&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="705515669228795">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="711725872736666" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="787831966490743" type="Knight">
+                                            <param id="0" name="Animation">&quot;Idle_U&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="454855733139642">
+                            <conditions>
+                                <condition id="-11" name="Is within angle" sid="613897099283393" type="Dir">
+                                    <param id="0" name="Within">10</param>
+                                    <param id="1" name="Angle">225</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="431772825945507">
+                                    <conditions>
+                                        <condition behavior="8Direction" id="0" name="Is moving" sid="639299547790652" type="Dir" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="860422866711661" type="Knight">
+                                            <param id="0" name="Animation">&quot;Run_U&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="816909121225586">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="229238156985363" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="993568784508599" type="Knight">
+                                            <param id="0" name="Animation">&quot;Idle_U&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="449393487904091">
+                            <conditions>
+                                <condition id="-11" name="Is within angle" sid="345718549869122" type="Dir">
+                                    <param id="0" name="Within">10</param>
+                                    <param id="1" name="Angle">180</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="302184547455129">
+                                    <conditions>
+                                        <condition behavior="8Direction" id="0" name="Is moving" sid="102577846496694" type="Dir" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="397408451681810" type="Knight">
+                                            <param id="0" name="Animation">&quot;Run_L&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="492878693114448">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="965136357138895" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="177395962224318" type="Knight">
+                                            <param id="0" name="Animation">&quot;Idle_L&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="703267057818880">
+                            <conditions>
+                                <condition id="-11" name="Is within angle" sid="409756820624895" type="Dir">
+                                    <param id="0" name="Within">10</param>
+                                    <param id="1" name="Angle">135</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="224221487289079">
+                                    <conditions>
+                                        <condition behavior="8Direction" id="0" name="Is moving" sid="302669077759320" type="Dir" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="867297393959538" type="Knight">
+                                            <param id="0" name="Animation">&quot;Run_D&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="978012026003281">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="469431219400685" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="509727247631215" type="Knight">
+                                            <param id="0" name="Animation">&quot;Idle_D&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="631736194157022">
+                            <conditions>
+                                <condition id="-11" name="Is within angle" sid="906471850343582" type="Dir">
+                                    <param id="0" name="Within">10</param>
+                                    <param id="1" name="Angle">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="467892544086007">
+                                    <conditions>
+                                        <condition behavior="8Direction" id="0" name="Is moving" sid="569643142451451" type="Dir" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="832633481924110" type="Knight">
+                                            <param id="0" name="Animation">&quot;Run_R&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="726781237670492">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="593471880769169" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="911126641706019" type="Knight">
+                                            <param id="0" name="Animation">&quot;Idle_R&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="584828441878935">
+                            <conditions>
+                                <condition id="-11" name="Is within angle" sid="962776561984096" type="Dir">
+                                    <param id="0" name="Within">10</param>
+                                    <param id="1" name="Angle">45</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="167975719920621">
+                                    <conditions>
+                                        <condition behavior="8Direction" id="0" name="Is moving" sid="534648989094124" type="Dir" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="603077008481321" type="Knight">
+                                            <param id="0" name="Animation">&quot;Run_D&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="526912332409714">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="300838023980071" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="443583722162098" type="Knight">
+                                            <param id="0" name="Animation">&quot;Idle_D&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="336310193245359">
+                            <conditions>
+                                <condition id="-11" name="Is within angle" sid="930935733122031" type="Dir">
+                                    <param id="0" name="Within">10</param>
+                                    <param id="1" name="Angle">90</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="140552351446845">
+                                    <conditions>
+                                        <condition behavior="8Direction" id="0" name="Is moving" sid="336224020126448" type="Dir" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="528162295150348" type="Knight">
+                                            <param id="0" name="Animation">&quot;Run_D&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="206138156912170">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="388402640631946" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="401797110975504" type="Knight">
+                                            <param id="0" name="Animation">&quot;Idle_D&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="114430330771701" title="Movement">
+                    <sub-events>
+                        <event-block any="1" sid="817667688260448">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="306723445899656" type="Keyboard">
+                                    <param id="0" name="Key">65</param>
+                                </condition>
+                                <condition id="3" name="Is button down" sid="232063282438567" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">14</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="573276219556637" type="Keyboard">
+                                    <param id="0" name="Key">37</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="195903244811228" type="Knight">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="456916436039520" type="Dir">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="360324780431170">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="459695010302305" type="Keyboard">
+                                    <param id="0" name="Key">87</param>
+                                </condition>
+                                <condition id="3" name="Is button down" sid="288705083787254" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">12</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="760992283781123" type="Keyboard">
+                                    <param id="0" name="Key">38</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="226773302544529" type="Knight">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="155435711629116" type="Dir">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="220458689516468">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="853696108660839" type="Keyboard">
+                                    <param id="0" name="Key">68</param>
+                                </condition>
+                                <condition id="3" name="Is button down" sid="969532804688193" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">15</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="855574994760275" type="Keyboard">
+                                    <param id="0" name="Key">39</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="719725864202297" type="Knight">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="540670886396911" type="Dir">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="902753304580205">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="158028729745495" type="Keyboard">
+                                    <param id="0" name="Key">83</param>
+                                </condition>
+                                <condition id="3" name="Is button down" sid="911188895252021" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">13</param>
+                                </condition>
+                                <condition id="2" name="Key is down" sid="687297433486551" type="Keyboard">
+                                    <param id="0" name="Key">40</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="654400399931626" type="Knight">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="391079439237764" type="Dir">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="578079285045012" title="Attack">
+            <sub-events>
+                <event-block sid="474550610276778">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="738256452227286" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="265503074646319" type="Knight">
+                            <param id="0" name="Instance variable">is_attack</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="498714550191873">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="324392150678509" type="Knight">
+                            <param id="0" name="Instance variable">is_attack</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="748418702917632" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="370796463160974" type="Knight">
+                            <param id="0" name="Object">Sword</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="718694498382259" type="Sword">
+                            <param id="0" name="Angle">Dir.Angle + 45</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="594202814625318">
+                            <conditions>
+                                <condition id="-13" name="Is between angles" sid="740497287900692" type="Dir">
+                                    <param id="0" name="First angle">180</param>
+                                    <param id="1" name="Second angle">360</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-29" name="Move to object" sid="830386643386886" type="Sword">
+                                    <param id="0" name="Where">1</param>
+                                    <param id="1" name="Object">Knight</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="908268796312498" type="System">
+                                    <param id="0" name="Seconds">0.125</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="827348209384463" type="Sword" />
+                                <action id="-13" name="Set boolean" sid="258786261372520" type="Knight">
+                                    <param id="0" name="Instance variable">is_attack</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="287680463811488">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="878429638110268" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-29" name="Move to object" sid="698419243038813" type="Sword">
+                                    <param id="0" name="Where">0</param>
+                                    <param id="1" name="Object">Knight</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="305992070879792" type="System">
+                                    <param id="0" name="Seconds">0.125</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="351361319903114" type="Sword" />
+                                <action id="-13" name="Set boolean" sid="809993733999637" type="Knight">
+                                    <param id="0" name="Instance variable">is_attack</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
