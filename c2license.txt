@@ -1,0 +1,9 @@
+﻿License type: BUSINESS
+Product: Construct 2
+Licensed to: kuyhAa
+Email: kuyhaa@tampan.com
+Comment: With best wishes from Figgler [mrfiggler@gmail.com]
+Timestamp: 1719349296
+Hash: 367467908767913B03553BAF29554779264C1CDA2D16C2A2
+
+This is PRIVATE license. Please TURN OFF "UPDATE CHECKING" in C2 preferences BEFORE USE!!!
